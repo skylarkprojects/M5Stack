@@ -1,6 +1,20 @@
 
+# a simple atom lite function to create a flashing light out of the 'G27' pin
+# works in Thonny, and in https://flow.m5stack.com/#video
+
+# uses
+#import machine, neopixel
+#np = neopixel.NeoPixel(machine.Pin(27), 1)
+#np[0] = (0, 0, 64)  # set to blue
+#np.write()
+
+# refer docs:
+# https://docs.micropython.org/en/latest/esp8266/tutorial/neopixel.html
+
+
 import time
 import machine, neopixel
+
 
 
 class flashlights:
