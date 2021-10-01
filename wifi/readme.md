@@ -22,4 +22,4 @@
 
 This package is dependent on webrepl being enabled (tutorial on this to come!)
 
-##### Once you're connected, dn't forget to jump onto your wifi router and reserve the local IP so the address doesn't change every time you want to access it ;-)
+##### Once you're connected, don't forget to jump onto your wifi router and reserve the local IP so the address doesn't change every time you want to access it ;-)
