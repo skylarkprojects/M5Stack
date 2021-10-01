@@ -6,9 +6,36 @@
 
 ## Installation
 
-Copy the entire 'wifi' file into your micropython main directory
+1) Copy the entire 'wifi' file into your micropython main directory
 
 ![image](https://user-images.githubusercontent.com/87293579/135570354-f6844b79-c8bf-41bc-8260-58e601badf4a.png)
+
+
+2) Update wifi/keys.py by inserting your wifi name and wifi password into the dispatch table between the "quote marks"
+
+
+3) Insert the following code into your 'boot.py' file in the main directory
+
+# --- START OF boot.py CODE ---
+# This file is executed on every boot (including wake-boot from deepsleep)
+
+from wifi import wifi
+
+def device_boot():
+    try:
+        wifi.connect()
+        print('wifi process executed')
+        
+        
+    except Exception as e:
+        
+        print('boot.py failed')
+        print(e)
+
+
+device_boot()
+# --- END OF boot.py CODE ---
+# at the conclusion of device_boot(), the boot will run main()
 
 
 
