@@ -6,6 +6,7 @@
 
 ## Installation
 
+
 1) Copy the entire 'wifi' file into your micropython main directory
 
 ![image](https://user-images.githubusercontent.com/87293579/135570354-f6844b79-c8bf-41bc-8260-58e601badf4a.png)
@@ -20,6 +21,9 @@
 
 # Dependencies
 
-This package is dependent on webrepl being enabled (tutorial on this to come!)
+This package is requires
+- ESP32 or similar ESP device with wifi hardware capability flashed with MicroPython
+- Webrepl being enabled (tutorial on this to come!)
+
 
 ##### Once you're connected, don't forget to jump onto your wifi router and reserve the local IP so the address doesn't change every time you want to access it ;-)
